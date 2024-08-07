@@ -76,15 +76,15 @@ export default function RestaurantListings({
 		routerWithFilters(router, filters);
 	}, [filters]);
 
-	useEffect(() => {
-		const unsubscribe = getRestaurantsSnapshot(data => {
-			setRestaurants(data);
-		}, filters);
+	// useEffect(() => {
+	// 	const unsubscribe = getRestaurantsSnapshot(data => {
+	// 		setRestaurants(data);
+	// 	}, filters);
 
-		return () => {
-			unsubscribe();
-		};
-	}, [filters]);
+	// 	return () => {
+	// 		unsubscribe();
+	// 	};
+	// }, [filters]);
 
 	return (
 		<article>
